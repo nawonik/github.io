@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntroPage</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+         body { 
+            font-family: 'Reggae One', cursive;
+            background-image: url(./images/bg.gif);
+            background-size: cover;
+            font-size: 1em;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 10em;
+            color: white;
+            margin: 0;
+            opacity: 0;
+            animation: fadeIn 4s ease-in-out forwards;
+        }
+        h2 {
+            color: yellow;
+            margin: 0;
+            opacity: 0;
+            animation: blink 1s ease-in-out infinite;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>The Battle</h1>
+        <h2>Press 'Space Bar' to Start</h2>
+    </div>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.keyCode === 32) { // Space Bar의 keycode는 32
+                location.href = './main.html'; // 이동하고자 하는 페이지의 URL을 입력하세요.
+            }
+        });
+    </script>
+</body>
+</html>

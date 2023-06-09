@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Battle</title>
+    
+    <style>
+       
+    @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+   
+       *{
+           font-family: 'Reggae One', cursive;
+            box-sizing: border-box;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <body>
+        <!-- red container -->
+        <div style="
+        position: relative;
+        display: inline-block">
+          <!-- small red container -->
+          <div
+            style="
+              position: absolute;
+              display: flex;
+              width: 100%;
+              align-items: center;
+              padding : 20px;
+            "
+          >
+            <!--아군 체력창 -->
+            <div
+            style="
+              
+              position: relative;
+              height: 50px;
+              width: 100%;
+              display: flex;
+              justify-content: flex-end;
+            "
+          >
+            <div style="
+            border-radius: 10px 0 0 10px;
+            background-color: rgba(253, 3, 3, 0.3);
+            height: 50px; 
+            width: 100%"
+            ></div>
+            <div
+              id="playerHealth"
+              style="
+              border-radius: 10px 0 0 10px;
+                position: absolute;
+                background: red;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+              "
+            ></div>
+          </div>
+                    
+                <!-- 타이머 -->
+                <div
+                  id="timer"
+                  style="
+                    background-color: rgba(250, 250, 250, 0.8);
+                    font-size: 1.5em;
+                    width: 100px;
+                    height: 60px;
+                    flex-shrink: 0;
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >99</div>
+            
+            <!-- 적 체력창 -->
+            <div style="position:relative; 
+                        height: 50px; 
+                        width:100%;">
+            <div style="
+              border-radius: 0 10px 10px 0; 
+              background-color:rgba(253, 3, 3, 0.3); height: 50px;"></div>
+            <div
+            id="enemyHealth"  
+            style = "position:absolute; 
+                    border-radius: 0 10px 10px 0;
+                    background:red;
+                    top:0;
+                    right:0;
+                    bottom:0;
+                    left:0;"
+                    ></div>
+            </div>
+
+            </div>
+            <div
+      id="displayText"
+      style="
+        
+        font-size:3em;
+        position: absolute;
+        color: white;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      "
+    >
+       
+    </div>
+          <canvas></canvas>
+        </div>
+      
+        <script src="script.js"></script>
+        
+      </body>
+</body>
+</html>
