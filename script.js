@@ -501,7 +501,7 @@ function animate() {
       //적군 피격판정시 체력 감소
       if (
         rectangularCollision({ rectangle1: player, rectangle2: enemy }) &&
-        player.isAttacking //&& player.framesCurrent === 1
+        player.isAttacking && player.framesCurrent === 1
         ) {
           enemy.takeHit()
             
@@ -512,7 +512,7 @@ function animate() {
       //아군 피격판정시 체력 감소
       if (
         rectangularCollision({ rectangle1: enemy, rectangle2: player }) &&
-        enemy.isAttacking //&& enemy.framesCurrent === 1
+        enemy.isAttacking && enemy.framesCurrent === 1
         ) {
         
         player.takeHit();
